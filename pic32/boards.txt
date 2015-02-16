@@ -19,7 +19,6 @@ uno_pic32.ldscript=chipKIT-application-32MX320F128.ld
 uno_pic32.compiler.c.flags=-O2 -c -mno-smart-io -w -ffunction-sections -fdata-sections -G1024 -g -mdebugger -Wcast-align -fno-short-double
 uno_pic32.compiler.cpp.flags=-O2 -c -mno-smart-io -w -fno-exceptions -ffunction-sections -fdata-sections -G1024 -g -mdebugger -Wcast-align -fno-short-double
 
-#uno_pic32.upload.using=avrdude
 uno_pic32.upload.tool=avrdude
 uno_pic32.upload.protocol=stk500v2
 uno_pic32.upload.maximum_size=126976
@@ -37,7 +36,6 @@ uno_pic32.build.mcu=32MX320F128H
 uno_pic32.build.f_cpu=80000000L
 uno_pic32.build.core=pic32
 uno_pic32.build.variant=Uno32
-#uno_pic32.upload.using=
 
 ############################################################
 mega_pic32.name=chipKIT MAX32
@@ -67,7 +65,7 @@ mega_pic32.build.mcu=32MX795F512L
 mega_pic32.build.f_cpu=80000000L
 mega_pic32.build.core=pic32
 mega_pic32.build.variant=Max32
-#mega_pic32.upload.using=
+mega_pic32.upload.tool=avrdude
 
 ############################################################
 mega_usb_pic32.name=chipKIT MAX32-USB for Serial
@@ -97,7 +95,7 @@ mega_usb_pic32.build.mcu=32MX795F512L
 mega_usb_pic32.build.f_cpu=80000000L
 mega_usb_pic32.build.core=pic32
 mega_usb_pic32.build.variant=Max32
-#mega_usb_pic32.upload.using=
+mega_usb_pic32.upload.tool=avrdude
 
 ############################################################
 chipkit_uc32.name=chipKIT uC32
@@ -133,7 +131,7 @@ chipkit_uc32.build.mcu=32MX340F512H
 chipkit_uc32.build.f_cpu=80000000L
 chipkit_uc32.build.core=pic32
 chipkit_uc32.build.variant=uC32
-#chipkit_uc32.upload.using=
+chipkit_uc32.upload.tool=avrdude
 
 ############################################################
 cerebot_mx3ck_512.name=Cerebot MX3cK 512
@@ -169,7 +167,7 @@ cerebot_mx3ck_512.build.mcu=32MX340F512H
 cerebot_mx3ck_512.build.f_cpu=80000000L
 cerebot_mx3ck_512.build.core=pic32
 cerebot_mx3ck_512.build.variant=Cerebot_MX3cK_512
-#chipkit_uc32.upload.using=
+chipkit_uc32.upload.tool=avrdude
 
 ############################################################
 cerebot_mx3ck.name=Cerebot MX3cK
@@ -205,7 +203,7 @@ cerebot_mx3ck.build.mcu=32MX320F128H
 cerebot_mx3ck.build.f_cpu=80000000L
 cerebot_mx3ck.build.core=pic32
 cerebot_mx3ck.build.variant=Cerebot_MX3cK
-#cerebot_mx3ck.upload.using=
+cerebot_mx3ck.upload.tool=avrdude
 
 ############################################################
 chipkit_mx3.name=chipKIT MX3
@@ -241,7 +239,7 @@ chipkit_mx3.build.mcu=32MX320F128H
 chipkit_mx3.build.f_cpu=80000000L
 chipkit_mx3.build.core=pic32
 chipkit_mx3.build.variant=Cerebot_MX3cK
-#chipkit_mx3.upload.using=
+chipkit_mx3.upload.tool=avrdude
 
 ############################################################
 cerebot_mx4ck.name=Cerebot MX4cK
@@ -271,7 +269,7 @@ cerebot_mx4ck.build.mcu=32MX460F512L
 cerebot_mx4ck.build.f_cpu=80000000L
 cerebot_mx4ck.build.core=pic32
 cerebot_mx4ck.build.variant=Cerebot_MX4cK
-#cerebot_mx4ck.upload.using=
+cerebot_mx4ck.upload.tool=avrdude
 
 ############################################################
 chipkit_pro_mx4.name=chipKIT Pro MX4
@@ -301,7 +299,7 @@ chipkit_pro_mx4.build.mcu=32MX460F512L
 chipkit_pro_mx4.build.f_cpu=80000000L
 chipkit_pro_mx4.build.core=pic32
 chipkit_pro_mx4.build.variant=Cerebot_MX4cK
-#chipkit_pro_mx4.upload.using=
+chipkit_pro_mx4.upload.tool=avrdude
 
 ############################################################
 cerebot_mx7ck.name=Cerebot MX7cK
@@ -331,7 +329,7 @@ cerebot_mx7ck.build.mcu=32MX795F512L
 cerebot_mx7ck.build.f_cpu=80000000L
 cerebot_mx7ck.build.core=pic32
 cerebot_mx7ck.build.variant=Cerebot_MX7cK
-#cerebot_mx7ck.upload.using=
+cerebot_mx7ck.upload.tool=avrdude
 
 ############################################################
 chipkit_pro_mx7.name=chipKIT Pro MX7
@@ -361,7 +359,7 @@ chipkit_pro_mx7.build.mcu=32MX795F512L
 chipkit_pro_mx7.build.f_cpu=80000000L
 chipkit_pro_mx7.build.core=pic32
 chipkit_pro_mx7.build.variant=Cerebot_MX7cK
-#chipkit_pro_mx7.upload.using=
+chipkit_pro_mx7.upload.tool=avrdude
 
 ############################################################
 cerebot32mx4.name=Cerebot 32MX4
@@ -391,7 +389,7 @@ cerebot32mx4.build.mcu=32MX460F512L
 cerebot32mx4.build.f_cpu=80000000L
 cerebot32mx4.build.core=pic32
 cerebot32mx4.build.variant=Cerebot_32MX4
-#cerebot32mx4.upload.using=
+cerebot32mx4.upload.tool=avrdude
 
 ############################################################
 cerebot32mx7.name=Cerebot 32MX7
@@ -421,7 +419,7 @@ cerebot32mx7.build.mcu=32MX795F512L
 cerebot32mx7.build.f_cpu=80000000L
 cerebot32mx7.build.core=pic32
 cerebot32mx7.build.variant=Cerebot_32MX7
-#cerebot32mx7.upload.using=
+cerebot32mx7.upload.tool=avrdude
 
 ############################################################
 mc_pic32_starterkit.name=Microchip PIC32 Starter kit
@@ -451,7 +449,7 @@ mc_pic32_starterkit.build.mcu=32MX360F512L
 mc_pic32_starterkit.build.f_cpu=80000000L
 mc_pic32_starterkit.build.core=pic32
 mc_pic32_starterkit.build.variant=Default_100
-#mc_pic32_starterkit.upload.using=
+mc_pic32_starterkit.upload.tool=avrdude
 
 ############################################################
 mc_pic32_ethernet_starterkit.name=Microchip PIC32 Ethernet Starter kit
@@ -481,7 +479,7 @@ mc_pic32_ethernet_starterkit.build.mcu=32MX795F512L
 mc_pic32_ethernet_starterkit.build.f_cpu=80000000L
 mc_pic32_ethernet_starterkit.build.core=pic32
 mc_pic32_ethernet_starterkit.build.variant=Default_100
-#mc_pic32_ethernet_starterkit.upload.using=
+mc_pic32_ethernet_starterkit.upload.tool=avrdude
 
 ############################################################
 mc_pic32_usb_starterkit.name=Microchip PIC32 USB Starter kit II
@@ -511,7 +509,7 @@ mc_pic32_usb_starterkit.build.mcu=32MX795F512L
 mc_pic32_usb_starterkit.build.f_cpu=80000000L
 mc_pic32_usb_starterkit.build.core=pic32
 mc_pic32_usb_starterkit.build.variant=Default_100
-#mc_pic32_usb_starterkit.upload.using=
+mc_pic32_usb_starterkit.upload.tool=avrdude
 
 ############################################################
 mc_pic32_explorer16.name=Microchip PIC32 Explorer 16
@@ -541,7 +539,7 @@ mc_pic32_explorer16.build.mcu=32MX360F512L
 mc_pic32_explorer16.build.f_cpu=80000000L
 mc_pic32_explorer16.build.core=pic32
 mc_pic32_explorer16.build.variant=Default_100
-#mc_pic32_explorer16.upload.using=
+mc_pic32_explorer16.upload.tool=avrdude
 
 ############################################################
 mikroe_multimedia.name=MirkoElektronika PIC32 Multimedia Board
@@ -570,7 +568,7 @@ mikroe_multimedia.build.mcu=32MX460F512L
 mikroe_multimedia.build.f_cpu=80000000L
 mikroe_multimedia.build.core=pic32
 mikroe_multimedia.build.variant=Default_100
-#mikroe_multimedia.upload.using=
+mikroe_multimedia.upload.tool=avrdude
 
 ############################################################
 mikroe_mikromedia.name=MirkoElektronika PIC32 mikroMedia Board
@@ -600,7 +598,7 @@ mikroe_mikromedia.build.mcu=32MX460F512L
 mikroe_mikromedia.build.f_cpu=80000000L
 mikroe_mikromedia.build.core=pic32
 mikroe_mikromedia.build.variant=Default_100
-#mikroe_mikromedia.upload.using=
+mikroe_mikromedia.upload.tool=avrdude
 
 ############################################################
 ubw32_mx460.name=Pic32 UBW32-MX460
@@ -630,7 +628,7 @@ ubw32_mx460.build.mcu=32MX460F512L
 ubw32_mx460.build.f_cpu=80000000L
 ubw32_mx460.build.core=pic32
 ubw32_mx460.build.variant=Default_100
-#ubw32_mx460.upload.using=
+ubw32_mx460.upload.tool=avrdude
 
 ############################################################
 ubw32_mx795.name=Pic32 UBW32-MX795
@@ -660,7 +658,7 @@ ubw32_mx795.build.mcu=32MX795F512L
 ubw32_mx795.build.f_cpu=80000000L
 ubw32_mx795.build.core=pic32
 ubw32_mx795.build.variant=Default_100
-#ubw32_mx795.upload.using=
+ubw32_mx795.upload.tool=avrdude
 
 ############################################################
 cui32.name=Pic32 CUI32-Development Stick
@@ -690,7 +688,7 @@ cui32.build.mcu=32MX440F512H
 cui32.build.f_cpu=80000000L
 cui32.build.core=pic32
 cui32.build.variant=Default_64
-#cui32.upload.using=
+cui32.upload.tool=avrdude
 
 ############################################################
 CUI32stem.name=CUI32stem
@@ -720,7 +718,7 @@ CUI32stem.build.mcu=32MX795F512H
 CUI32stem.build.f_cpu=80000000L
 CUI32stem.build.core=pic32
 CUI32stem.build.variant=CUI32stem
-#CUI32stem.upload.using=
+CUI32stem.upload.tool=avrdude
 
 
 ############################################################
@@ -733,6 +731,7 @@ fubarino_sd_seeed.board.define=-D_USE_USB_FOR_SERIAL_
 fubarino_sd_seeed.ccflags=ffff
 fubarino_sd_seeed.ldscript=chipKIT-application-32MX440F256.ld
 
+fubarino_sd_seeed.upload.tool=avrdude
 fubarino_sd_seeed.upload.protocol=stk500v2
 fubarino_sd_seeed.upload.maximum_size=258048
 fubarino_sd_seeed.upload.speed=115200
@@ -760,6 +759,7 @@ fubarino_sd.board.define=-D_USE_USB_FOR_SERIAL_
 fubarino_sd.ccflags=ffff
 fubarino_sd.ldscript=chipKIT-application-32MX795F512.ld
 
+fubarino_sd.upload.tool=avrdude
 fubarino_sd.upload.protocol=stk500v2
 fubarino_sd.upload.maximum_size=520192
 fubarino_sd.upload.speed=115200
@@ -793,6 +793,7 @@ fubarino_mini_dev.ldscript=chipKIT-application-32MX250F128.ld
 fubarino_mini_dev.compiler.c.flags=-O2 -c -mno-smart-io -w -ffunction-sections -fdata-sections -G1024 -g -mdebugger -Wcast-align -fno-short-double
 fubarino_mini_dev.compiler.cpp.flags=-O2 -c -mno-smart-io -w -fno-exceptions -ffunction-sections -fdata-sections -G1024 -g -mdebugger -Wcast-align -fno-short-double
 
+fubarino_mini_dev.upload.tool=avrdude
 fubarino_mini_dev.upload.protocol=stk500v2
 # 128KB - 4K for EEPROM - 4K for bootloader
 fubarino_mini_dev.upload.maximum_size=122880
@@ -827,6 +828,7 @@ fubarino_mini.ldscript=chipKIT-application-32MX250F128.ld
 fubarino_mini.compiler.c.flags=-O2 -c -mno-smart-io -w -ffunction-sections -fdata-sections -G1024 -g -mdebugger -Wcast-align -fno-short-double
 fubarino_mini.compiler.cpp.flags=-O2 -c -mno-smart-io -w -fno-exceptions -ffunction-sections -fdata-sections -G1024 -g -mdebugger -Wcast-align -fno-short-double
 
+fubarino_mini.upload.tool=avrdude
 fubarino_mini.upload.protocol=stk500v2
 # 128KB - 4K for EEPROM - 4K for bootloader
 fubarino_mini.upload.maximum_size=122880
@@ -907,7 +909,7 @@ quick240_usb_pic32.build.mcu=32MX795F512L
 quick240_usb_pic32.build.f_cpu=80000000L
 quick240_usb_pic32.build.core=pic32
 quick240_usb_pic32.build.variant=quicK240
-#mega_usb_pic32.upload.using=
+mega_usb_pic32.upload.tool=avrdude
 
 ############################################################
 usbono_pic32.name=PONTECH UAV100
@@ -945,7 +947,7 @@ usbono_pic32.build.f_cpu=80000000L
 usbono_pic32.build.core=pic32
 usbono_pic32.build.variant=Default_64
 #usbono_pic32.build.variant=Uno32
-#usbono_pic32.upload.using=
+usbono_pic32.upload.tool=avrdude
 
 ############################################################
 Olimex_Pinguino32.name=PIC32 Pinguino
