@@ -1,0 +1,217 @@
+Source: chipkit
+Section: cores
+XBSC-Family: pic32
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: http://chipkit.net
+
+Package: chipkit
+Architecture: all
+Depends: pic32-tools
+Section: cores
+Recommends: libdspi-chipkit, libspi-chipkit, libsoftspi-chipkit, libarduinotestsuite-chipkit, libdeipck-chipkit, libdewfck-chipkit, libim8720phy-chipkit, libmrf24g-chipkit, libhttpserver-chipkit, libethernet-chipkit, libfirmata-chipkit, libwire-chipkit, libonewire-chipkit, libsoftwareserial-chipkit, libeeprom-chipkit, libsd-chipkit, libliquidcrystal-chipkit, libservo-chipkit, libsoftpwmservo-chipkit, libstepper-chipkit 
+Description: chipKIT 
+ The chipKIT core provides an Arduino 1.x API interface to
+ Microchip's PIC32 family of microcontrollers.
+
+Package: libdspi-chipkit
+Architecture: all
+Provides: DSPI.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: SPI
+Depends: chipkit
+Description: DSPI Library
+ The DSPI library is an alternative to the normal SPI library.  It provides
+ advanced access to all the SPI ports available on a chipKIT board.
+
+Package: libspi-chipkit
+Architecture: all
+Provides: SPI.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: SPI
+Depends: chipkit
+Description: SPI Library
+ The SPI library is the traditional Arduino version.  It only allows
+ the use of the primary SPI port on a chipKIT board.
+
+Package: libsoftspi-chipkit
+Architecture: all
+Provides: SoftSPI.h
+XBSC-Group: Communications
+XBSC-Subgroup: SPI
+Depends: chipkit
+Section: libraries
+Description: SoftSPI Library
+ The SoftSPI library emulates SPI over any pins you choose to use.
+ It is, of course, slower than hardware SPI, but gives great flexibility
+ for those times when you need an extra SPI channel for some low speed
+ occasional use.
+
+Package: libarduinotestsuite-chipkit
+Architecture: all
+Provides: ArduinoTestSuite.h
+Section: libraries
+XBSC-Group: Tests
+Depends: chipkit
+Description: Arduino Test Suite
+ A set of unit tests to validate a working system
+
+Package: libdeipck-chipkit
+Architecture: all
+Provides: DEIPcK.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Networking
+Depends: chipkit
+Description: chipKIT Core Networking Library
+ This library provides the core networking functionality of the chipKIT
+ networking stack.
+
+Package: libdewfck-chipkit
+Architecture: all
+Provides: DEWFcK.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Networking
+Depends: chipkit, libdeipck-chipkit
+Description: WiFi networking layer
+ This adds WiFi capability to the chipKIT networking stack.
+
+Package: libim8720phy-chipkit
+Architecture: all
+Provides: IM8720PHY.h
+XBSC-Group: Communications
+XBSC-Subgroup: Networking
+Section: libraries
+Depends: chipkit, libdeipck-chipkit
+Description: IM8720PHY Ethernet Adapter
+ Allows use of the internal PIC32 Ethernet device with an IM8720PHY
+ Ethernet interface.
+
+Package: libmrf24g-chipkit
+Architecture: all
+Provides: MRF29G.h
+XBSC-Group: Communications
+Section: libraries
+XBSC-Subgroup: Networking
+Depends: chipkit, libdeipck-chipkit, libdewfck-chipkit, libdspi-chipkit
+Description: MRF24G WiFi Adapter
+ Use the MRF24G WiFi adapter module with the chipKIT networking stack.
+
+Package: libhttpserver-chipkit
+Architecture: all
+Provides: HTTPServer.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Networking
+Depends: chipkit, libdeipck-chipkit
+Description: HTTP Server Library
+ Simple abstraction layer for implementing an HTTP server with the chipKIT
+ networking stack.
+
+Package: libethernet-chipkit
+Architecture: all
+Provides: Ethernet.h
+XBSC-Group: Communications
+Section: libraries
+XBSC-Subgroup: Networking
+Depends: chipkit, libspi-chipkit
+Description: W5100 Ethernet Library
+ This is the traditional Arduino Ethernet interface library.
+
+Package: libfirmata-chipkit
+Architecture: all
+Provides: Firmata.h
+Section: libraries
+XBSC-Group: Communications
+XBSC-Subgroup: Protocols
+Depends: chipkit
+Description: Firmata
+ The Firmata system is a method to control a board through a generic
+ serial protocol.
+
+Package: libwire-chipkit
+Section: libraries
+Architecture: all
+Provides: Wire.h
+XBSC-Group: Communications
+Depends: chipkit
+Description: Wire I2C Library
+ The traditional Arduino I2C library
+
+Package: libonewire-chipkit
+Architecture: all
+Provides: OneWire.h
+Section: libraries
+XBSC-Group: Communications
+Depends: chipkit
+Description: Dallas OneWire Library
+ Communicate with Dallas OneWire sensors.
+
+Package: libsoftwareserial-chipkit
+Architecture: all
+Provides: SoftwareSerial.h
+Section: libraries
+XBSC-Group: Communications
+Depends: chipkit
+Description: Software Serial
+ Primitive bit-banged serial emulation.
+
+Package: libeeprom-chipkit
+Architecture: all
+Provides: EEPROM.h
+Section: libraries
+XBSC-Group: Storage
+Depends: chipkit
+Description: PIC32 EEPROM Emulation
+ Use a block of reserved Flash as if it were EEPROM memory.
+ Emulates the Arduino EEPROM class.
+
+Package: libsd-chipkit
+Architecture: all
+Section: libraries
+Provides: SD.h
+XBSC-Group: Storage
+Depends: chipkit
+Description: SD Card Library
+ Access SD cards using the PIC32
+
+Package: libliquidcrystal-chipkit
+Architecture: all
+Section: libraries
+Provides: LiquidCrystal.h
+XBSC-Group: Display
+Depends: chipkit
+Description: HD44780 LCD Display
+ Control standard HD44780 text LCD displays
+
+Package: libservo-chipkit
+Architecture: all
+Section: libraries
+Provides: Servo.h
+XBSC-Group: Motor
+Depends: chipkit
+Description: Servo Library
+ Drive servo motors with hardware PWM from the chipKIT boards.
+
+Package: libsoftpwmservo-chipkit
+Architecture: all
+Section: libraries
+Provides: SoftPWMServo.h
+XBSC-Group: Motor
+Depends: chipkit
+Description: Software PWM Servo Library
+ Drive servo motors with software PWM from the chipKIT boards.
+
+Package: libstepper-chipkit
+Architecture: all
+Section: libraries
+Provides: Stepper.h
+XBSC-Group: Motor
+Depends: chipkit
+Description: Stepper Motors
+ Control stepper motors.

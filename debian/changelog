@@ -1,0 +1,12 @@
+chipkit (1.6.0-1) uecide; urgency=low
+
+  * added the starter core files. Still rough. Needing to figure out avrdude issues.
+
+ -- ricklon <rick.rickanderson@gmail.com>  Sat, 14 Feb 2015 22:16:08 -0500
+
+chipkit (1.6.0-0) uecide; urgency=low
+
+  * Initial commit
+
+ -- Ricklon <rick.rickanderson@gmail.com>  Sat, 14 Feb 2015 22:13:52 -0500
+
