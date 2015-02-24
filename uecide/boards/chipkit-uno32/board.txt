@@ -1,0 +1,25 @@
+variant=chipkit-uno32
+description=chipKIT UNO32
+group=chipKIT
+platform=pic32
+board=_BOARD_UNO_
+board.flags=
+bootloader=bootloader.hex
+ccflags=ffff
+ldscript=chipKIT-application-32MX320F128${upload.${prefs:board.${prefs:board}.programmer}.ldsuffix}.ld
+upload.protocol=stk500v2
+upload.maximum_size=126976
+upload.speed=115200
+build.mcu=32MX320F128H
+build.f_cpu=80000000L
+build.core=pic32
+build.variant=chipkit-uno32
+family=pic32
+version=0.5
+revision=5
+core=chipkit
+manual=doc/chipKIT-Uno32-RevC_rm.pdf
+name=chipkit-uno32
+
+bootloader.url=https://github.com/chipKIT32/PIC32-avrdude-bootloader/raw/master/BootloadersCurrent-hex/chipKIT-Uno32.hex
+bootloader.file=${board:root}/bootloader

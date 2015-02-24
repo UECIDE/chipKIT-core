@@ -130,7 +130,7 @@ Section: libraries
 XBSC-Group: Communications
 XBSC-Subgroup: Protocols
 Depends: chipkit
-Description: Firmata
+Description: chipKIT Firmata
  The Firmata system is a method to control a board through a generic
  serial protocol.
 
@@ -215,3 +215,511 @@ XBSC-Group: Motor
 Depends: chipkit
 Description: Stepper Motors
  Control stepper motors.
+
+Package: 4d-picadillo-35t
+Architecture: all
+Section: boards
+XBSC-Group: 4D Systems
+Homepage: http://www.4dsystems.com.au/product/Picadillo_35T/
+Depends: chipkit, libdisplaycore-driver-picadillo
+Description: Picadillo-35T
+ The Picadillo-35T is a 3.5” 320x480 resolution (Half VGA) Embedded Display
+ Module with Resistive Touch, featuring the Microchip PIC32MX795F512L 32bit
+ microcontroller and Arduino™/ chipKIT™ style headers for easy attachment of
+ shields, and compatible with UECIDE, MPIDE and MPLAB X Programming IDEs,
+ making this a brilliant display solution with open source software.
+ .
+ The Picadillo-35T was designed with complete system control in mind. It
+ features a 3.5” display along with a ton of GPIO, making it a perfect
+ candidate for system control which demands a GUI or user interface.
+ .
+ The PIC32MX795F512L is a powerful 32bit microcontroller from Microchip,
+ which has 512Kb of Flash and 128Kb of SRAM, runs at 80Mhz and is capable
+ of 105 DMIPS. It features a PMP graphics port which is used to connect the
+ on board 3.5” display, allowing for fast graphics fully controlled by the
+ Users code. The same PIC32 is found on the popular chipKIT Max32 Development
+ Board.
+ .
+ The Picadillo-35T has been designed to be programmed using the UECIDE IDE, which
+ is based on the Arduino IDE however with various enhancements and improvements.
+ It can also be used with MPIDE, or even using Microchip MPLAB X. Using UECIDE or
+ MPIDE, the display module can essentially be treated as if it was a chipKIT MAX32
+ and programmed using the familiar programming language found on the Arduino/chipKIT.
+ .
+ UECIDE can be used to program Arduino boards as well as chipKIT boards, and is
+ compatible with many existing Arduino and chipKIT libraries, allowing easy migration
+ from existing boards!
+ .
+ The Picadillo-35T features an on board FTDI USB to TTL converter for programming and
+ powering the display, along with an ICSP connection for using programmers such as the
+ PICKIT3.
+ .
+ It also features an on board microSD connector, on board audio amplifier and speaker,
+ RTC oscillator, and headers in the layout of the popular chipKIT Uno32.
+ .
+ If you can program the Arduino or the chipKIT range of products, or you want to get
+ started, this product is for you. It features the best of the microcontroller platforms,
+ coupled with a 3.5" Display, Audio, microSD card and the familiar programming language. 
+
+Package: boxtec-helvepic32
+Architecture: all
+Section: boards
+Depends: chipkit
+Homepage: http://www.mathias-wilhelm.de/arduino/embedded-boards/helvepic32
+XBSC-Group: Boxtec
+Description: Boxtec HelvePic32
+ This board was designed by Mathias Wilhelm together with his son
+ Dominik and the kit will be made available via boxtec.ch
+
+Package: chipkit-cmod
+Architecture: all
+Homepage: http://www.digilentinc.com/Products/Detail.cfm?Prod=CHIPKIT-CMOD
+XBSC-Group: chipKIT
+Section: boards
+Depends: chipkit
+Description: chipKIT Cmod
+ The chipKIT Cmod is a chipKIT/MPIDE compatible board from Digilent.
+ It combines a Microchip® PIC32MX150F128D microcontroller with a
+ convenient 600-mil, 40-pin DIP package and two Digilent Pmod connectors.
+ Digilent’s Cmod boards are ideally suited for breadboards or other
+ prototype circuit designs where the use of small surface mount packages
+ is impractical.
+
+Package: chipkit-dp32
+Section: boards
+XBSC-Group: chipKIT
+Homepage: http://www.digilentinc.com/Products/Detail.cfm?Prod=CHIPKIT-DP32
+Architecture: all
+Depends: chipkit
+Description: chipKIT DP32
+ The chipKIT DP32 is a chipKIT/MPIDE compatible prototyping and project
+ development board from Digilent. It combines the power of the Microchip®
+ PIC32MX250F128B with a wire wrap prototyping area, provision for an
+ EEPROM non-volatile memory, and analog temperature sensor, a potentiometer,
+ buttons and LEDs in a single board. The mounting hole footprint on the
+ board is designed to fit in the Hammond 1591XXSSBK project box.
+
+Package: chipkit-max32
+Section: boards
+XBSC-Group: chipKIT
+Homepage: http://www.digilentinc.com/Products/Detail.cfm?Prod=CHIPKIT-MAX32
+Architecture: all
+Depends: chipkit
+Description: chipKIT Max32
+ The chipKIT™ Max32™ is based on the popular Arduino™ open source hardware
+ prototyping platform but adds the performance of the Microchip PIC32
+ microcontroller. The Max32 is the same form factor as the Arduino Mega
+ board and is compatible with many Arduino™ shields as well as larger shields
+ for use with the Mega boards. It features a USB serial port interface for
+ connection to the IDE and can be powered via USB or an external power supply.
+
+Package: chipkit-mx3
+Homepage: https://www.digilentinc.com/Products/Detail.cfm?NavPath=2,892,1217&Prod=CHIPKIT-MX3
+Section: boards
+XBSC-Group: chipKIT
+Architecture: all
+Depends: chipkit
+Description: chipKIT MX3
+ The chipKIT™MX3 is a microcontroller development board based on the
+ Microchip PIC32MX320F128H, a member of the 32-bit PIC32 microcontroller
+ family. It is compatible with Digilent’s line of Pmod™ peripheral modules,
+ and is suitable for use with the Microchip MPLAB® IDE tools. The chipKIT
+ MX3 is also compatible for use with the chipKIT™ MPIDE development
+ environment. ChipKIT and MPIDE is a PIC32 based system compatible with many
+ existing Arduino™ code examples, reference materials and other resources.
+
+Package: chipkit-pi
+Section: boards
+XBSC-Group: chipKIT
+Homepage: http://www.element14.com/community/community/raspberry-pi/raspberry-pi-accessories/chipkit_pi
+Architecture: all
+Depends: chipkit
+Description: chipKIT Pi
+ chipKIT™ Pi (Designed for Raspberry Pi) is the latest Arduino™ compatible
+ chipKIT™ platform from Microchip and element14. It features a 32-bit
+ PIC32 microcontroller in a prototyping-friendly, low pin count SPDIP
+ package. The PIC32's performance, memory and integrated peripherals
+ allow users to create applications including touch sensing, audio
+ processing and advanced control. The board is supported by the free
+ chipKIT™Multi-Platform IDE (MPIDE) that can be hosted on the Raspberry Pi.
+
+Package: chipkit-pro-mx4
+Section: boards
+XBSC-Group: chipKIT
+Homepage: https://www.digilentinc.com/Products/Detail.cfm?NavPath=2,892,1218&Prod=CHIPKIT-PRO-MX4
+Architecture: all
+Depends: chipkit
+Description: chipKIT Pro MX4
+ The chipKIT™ Pro MX4 is a microcontroller development board based on the
+ Microchip PIC32MX460F512L, a member of the 32-bit PIC32 microcontroller
+ family. It is compatible with Digilent’s line of Pmod™ peripheral
+ modules, and is suitable for use with the Microchip MPLAB® IDE tools.
+ The chipKIT Pro MX4 is also compatible for use with the chipKIT™ MPIDE
+ development environment. ChipKIT and MPIDE is a PIC32 based system
+ compatible with many existing Arduino™ code examples, reference
+ materials and other resources.
+
+Package: chipkit-pro-mx7
+XBSC-Group: chipKIT
+Section: boards
+Homepage: https://www.digilentinc.com/Products/Detail.cfm?NavPath=2,892,1218&Prod=CHIPKIT-PRO-MX7
+Architecture: all
+Depends: chipkit
+Description: chipKIT Pro MX7
+ The chipKIT™Pro MX7 is a microcontroller development board based on the
+ Microchip PIC32MX795F512L, a member of the 32-bit PIC32 microcontroller
+ family. It is compatible with Digilent’s line of Pmod™ peripheral
+ modules, and is suitable for use with the Microchip MPLAB® IDE tools.
+ The chipKIT Pro MX7 is also compatible for use with the chipKIT™ MPIDE
+ development environment. ChipKIT and MPIDE is a PIC32 based system
+ compatible with many existing Arduino™ code examples, reference materials
+ and other resources.
+
+Package: chipkit-uc32
+Section: boards
+XBSC-Group: chipKIT
+Homepage: http://www.digilentinc.com/Products/Detail.cfm?Prod=CHIPKIT-UC32
+Architecture: all
+Depends: chipkit
+Description: chipKIT uC32
+ The chipKIT uC32 is based on the popular Arduino™ open-source
+ hardware prototyping platform and adds the performance of the
+ Microchip PIC32 microcontroller.
+
+Package: chipkit-uno32
+Section: boards
+XBSC-Group: chipKIT
+Homepage: http://www.digilentinc.com/Products/Detail.cfm?Prod=CHIPKIT-UNO32
+Architecture: all
+Depends: chipkit
+Description: chipKIT Uno32
+ The chipKIT™ Uno32™ is based on the popular Arduino™ open source hardware
+ prototyping platform but adds the performance of the Microchip PIC32
+ microcontroller. The Uno32 is the same form factor as the Arduino™ Uno
+ board and is compatible with many Arduino™ shields. It features a USB
+ serial port interface for connection to the IDE and can be powered via
+ USB or an external power supply.
+
+
+Package: chipkit-wf32
+XBSC-Group: chipKIT
+Section: boards
+Homepage: http://www.digilentinc.com/Products/Detail.cfm?Prod=CHIPKIT-WF32
+Architecture: all
+Depends: chipkit
+Description: chipKIT WF32
+ The chipKIT WF32 is based on the popular Arduino™ open-source hardware
+ prototyping platform and adds the performance of the Microchip PIC32
+ microcontroller. The WF32 is the first board from Digilent to have a WiFi
+ MRF24 and SD card on the board both with dedicated signals.
+ .
+ The WF32 board takes advantage of the powerful PIC32MX695F512L
+ microcontroller. This microcontroller features a 32-bit MIPS processor
+ core running at 80Mhz, 512K of flash program memory, and 128K of SRAM
+ data memory. The WF32 can be programmed using the Multi-Platform
+ Integrated Development Environment (MPIDE), an environment based on
+ the original Arduino IDE, modified to support PIC32. It contains
+ everything needed to start developing embedded applications.
+ .
+ The WF32 features a USB serial port interface for connection
+ to the MPIDE and can be powered via USB or by an external power supply.
+ In addition, the WF32 is fully compatible with the advanced Microchip MPLAB®
+ IDE and works with all MPLAB® compatible in-system programmer/debuggers,
+ such as the Microchip PICkit™3 or the Digilent chipKIT PGM. The WF32 is easy
+ to use and suitable for both beginners and advanced users experimenting
+ with electronics and embedded control systems.
+ .
+ * Microchip® PIC32MX695F512L microcontroller (80 Mhz 32-bit MIPS, 512K Flash, 128K SRAM)
+ * Microchip MRF24WG0MA WiFi module
+ * Micro SD card connector
+ * USB 2.0 OTG controller with A and micro-AB connectors
+ * 43 available I/O pins
+ * Four user LEDs
+ * PC connection uses a USB A > mini B cable (not included)
+ * 12 analog inputs
+ * 3.3V operating voltage
+ * 80Mhz operating frequency
+ * 7V to 15V input voltage (recommended)
+ * 30V input voltage (maximum)
+ * 0V to 3.3V analog input voltage range
+ * High efficiency, switching 3.3V power supply providing low power operation
+
+Package: chipkit-wifire
+XBSC-Group: chipKIT
+Section: boards
+Homepage: http://www.digilentinc.com/Products/Detail.cfm?Prod=CHIPKIT-WIFIRE
+Architecture: all
+Depends: chipkit
+Description: chipKIT Wi-FIRE
+ Introducing the chipKIT™ Wi-FIRE: The first chipKIT™ to feature
+ the latest, most powerful line of Microchip’s microcontroller family.
+
+
+Package: ermetris-magneto
+Section: boards
+XBSC-Group: Ermetris
+Homepage: http://www.ermetris.com/Ermetris/index.php/en/
+Architecture: all
+Depends: chipkit
+Description: Ermetris MAGNETO
+ The Magneto-1000 is a M2M gateway platform based on the Microchip PIC32
+ microcontroller, Ermetris developed a Single Board Computer (SBC) which
+ integrates Wireless and Wired functionality as Zigbee, WiFI, GSM/GPRS,
+ Ethernet, Can bus, Serial ports. Moreover the system allows you to have
+ tracking capability with GPS, Odometer, Gyroscope and accelerometer,
+ and 4 Digital Inputs , 4 Digital Outputs , 2 Analog Inputs. The system
+ configured properly can be a valid platform for mobile use (fleet
+ tracking, on board gateway and computer) and domotic/industrial use as
+ a M2M device with Digital/Anlog Input/Output capabilities.
+
+Package: fubarino-mini
+Section: boards
+XBSC-Group: Fubar Labs
+Homepage: http://fubarino.org/sd/index.html
+Architecture: all
+Depends: chipkit
+Description: Fubarino Mini
+ The Fubarino™ Mini is small 33 pin Arduino API compatible board with a
+ difference. The PIC32MX250 part used on Fubarino Mini has a Peripheral
+ Pin Select function for almost all of its I/O pins. When writing sketches
+ for the Fubarino Mini, you must remember to connect an internal peripheral
+ (like SPI or UART) to a particular set of I/O pins using the PPS functions
+ (ppsInputSelect() and ppsOutputSelect()) before trying to use the peripheral.
+
+Package: fubarino-sd
+Section: boards
+XBSC-Group: Fubar Labs
+Homepage: http://fubarino.org/sd/index.html
+Architecture: all
+Depends: chipkit
+Description: Fubarino SD
+ The Fubarino™ SD board brings affordable, breadboard compatible high
+ speed computing power to the Arduino-compatible chipKIT/MPIDE platform.
+ It is able to run almost all Arduino sketches right out of the box at
+ a great price, and includes more memory, speed, and I/O pins than a
+ typical Arduino or clone. And it includes a microSD card slot for
+ easy sketch access to huge file storage.
+
+Package: majenko-prfm
+Section: boards
+XBSC-Group: Majenko Technologies
+Homepage: http://majenko.co.uk
+Architecture: all
+Depends: chipkit, libpwmaudio-chipkit, libledmux-chipkit, libdebouncedinput
+Description: Pulse Rifle FX Module
+ The Pulse Rifle FX Module is an embedded device for including in replica
+ M41A Pulse Rifle props from the Aliens franchise of films.  With an
+ ultra-bright red 7-segment display and onboard audio this makes the
+ perfect addition to any fan's replica prop.
+
+Package: majenko-sdxl
+Section: boards
+XBSC-Group: Majenko Technologies
+Homepage: http://majenko.co.uk
+Architecture: all
+Depends: chipkit
+Description: Majenko Technologies SDXL
+ With a similar pinout to the Fubarino SD, the Majenko Technologies
+ SDXL is a drop-in replacememnt.  It does, however, have a number of
+ important enhancements for advanced users.
+
+Package: majenko-sdzl
+Section: boards
+XBSC-Group: Majenko Technologies
+Homepage: http://majenko.co.uk
+Architecture: all
+Depends: chipkit
+Description: Majenko Technologies SDZL
+ With the same footprint as the SDXL, the SDZL boasts a 200MHz
+ PIC32MZ microcontroller.
+
+Package: majenko-ultranano
+Section: boards
+XBSC-Group: Majenko Technologies
+Architecture: all
+Depends: chipkit
+Description: UltraNano USB Interface
+ The UltraNano USB Interface is a tiny PIC32 based board which is designed
+ to plug directly into a USB port.
+
+Package: mchp-explorer16
+Section: boards
+XBSC-Group: Microchip
+Homepage: http://www.microchip.com/Developmenttools/ProductDetails.aspx?PartNO=DM240001
+Architecture: all
+Depends: chipkit
+Description: Explorer 16 Development Board
+ The Explorer 16 Development Board is a low-cost modular development
+ system for Microchip’s 16-bit and 32-bit microcontrollers. It
+ supports devices from the PIC24, dsPIC and PIC32 families. A variety
+ of families are supported with processor Plug-In Modules (PIMs) for
+ easy device swapping.  The board includes a PICtail Plus daughter
+ card connector for expansion boards including USB, CAN, Ethernet,
+ wireless, graphics and many more.  Coupled with the MPLAB ICD 3 In
+ Circuit Debugger or MPLAB REAL ICE, real-time emulation and debug
+ facilities speed evaluation and prototyping of application circuitry.
+
+Package: mchp-starter
+Section: boards
+XBSC-Group: Microchip
+Homepage: http://www.microchip.com/Developmenttools/ProductDetails.aspx?PartNO=DM320001
+Architecture: all
+Depends: chipkit
+Description: PIC32 Starter Kit
+ The PIC32 Starter Kit provides the easiest and lowest cost method to
+ experience the PIC32 microcontroller for the first time. From the over
+ 35 source code examples to the getting started project, users quickly
+ learn Microchip's 32-bit family of microcontrollers and development
+ tools. The kit includes everything needed to write, program, debug,
+ and execute code on a high performance PIC32 microcontroller.
+
+Package: mchp-starter-eth
+Section: boards
+XBSC-Group: Microchip
+Homepage: http://www.microchip.com/DevelopmentTools/ProductDetails.aspx?PartNO=DM320004
+Architecture: all
+Depends: chipkit
+Description: PIC32 Ethernet Starter Kit
+ The PIC32 Ethernet Starter Kit provides the easiest and lowest cost
+ method to experience 10/100 Ethernet development with PIC32. Combined
+ with Microchip's free TCP/IP software, your project will be running in
+ no time. The PIC32 has an available CAN 2.0b peripheral and USB
+ host/device/OTG.
+
+Package: mchp-starter-usb
+Section: boards
+XBSC-Group: Microchip
+Homepage: http://www.microchip.com/Developmenttools/ProductDetails.aspx?PartNO=DM320003-2
+Architecture: all
+Depends: chipkit
+Description: PIC32 USB Starter Kit II
+ The PIC32 USB Starter Kit II provides the easiest and lowest cost method
+ to experience the USB and CAN functionality of the PIC32 microcontrollers.
+ Users can develop CAN applications using PIC32 expansion board. The board
+ contains everything need to develop USB embedded host/device/OTG applications
+ by combining this board with Microchip's free USB software.
+
+Package: mikroe-mikromedia
+Section: boards
+XBSC-Group: MikroElektronika
+Homepage: http://www.mikroe.com/mikromedia/pic32/
+Architecture: all
+Depends: chipkit
+Description: MikroMedia for PIC32
+ This board provides a compact high-quality multimedia development
+ platform for PIC32MX460F512L device. It has numerous on-board modules,
+ that allow you to write multimedia applications. This board can be
+ used for both development or as a final product.
+
+Package: mikroe-multimedia
+Section: boards
+XBSC-Group: MikroElektronika
+Homepage: http://www.mikroe.com/multimedia/pic32mx7/
+Architecture: all
+Depends: chipkit
+Description: MultiMedia for PIC32MX7
+ This board provides a complete, high-quality multimedia development
+ platform for PIC32MX7 devices. It has numerous on-board modules,
+ that allow you to write multimedia applications of high complexity.
+ This board can be used for both development or as a final product.
+
+Package: olimex-pinguino32
+Section: boards
+XBSC-Group: Olimex
+Homepage: https://www.olimex.com/Products/Duino/PIC32/PIC32-PINGUINO/open-source-hardware
+Architecture: all
+Depends: chipkit
+Description: PIC32 Pinguino
+ Open Source Hardware Industrial grade Pinguino Arduino
+ like development board
+
+Package: olimex-pinguino32-obl
+Section: boards
+XBSC-Group: Olimex
+Homepage: https://www.olimex.com/Products/Duino/PIC32/PIC32-PINGUINO/open-source-hardware
+Architecture: all
+Depends: chipKIT
+Description: PIC32 Pinguino (Olimex Bootloader)
+ Open Source Hardware Industrial grade Pinguino
+ Arduino like development board
+
+Package: overtone-cui32
+Section: boards
+XBSC-Group: Overtone Labs
+Homepage: https://code.google.com/p/cui32/
+Architecture: all
+Depends: chipkit
+Description: Create USB Interface
+ The original Create USB Interface
+
+
+Package: overtone-cui32stem
+Section: boards
+XBSC-Group: Overtone Labs
+Homepage: https://code.google.com/p/cui32/
+Architecture: all
+Depends: chipkit
+Description: Create USB Interface STEM
+ STEM version of the Create USB Interface
+
+Package: pontech-quick240
+Section: boards
+XBSC-Group: PONTECH
+Homepage: http://quick240.com/quicki/
+Architecture: all
+Depends: chipkit
+Description: PONTECH quicK240
+ Quick™ (Quick Universal Industrial Control Kard) is based on chipKIT(tm)
+ open source platform. The Quick240 is designed for industrial automation
+ systems where traditionally a ladder logic PLC might have been used.
+ Since the Quick240 is an open platform for industrial automation it
+ effectively extends the traditional life of a similarly proprietary.
+ This is achieved in several ways.
+
+Package: pontech-uav100
+Section: boards
+XBSC-Group: PONTECH
+Homepage: http://www.pontech.com/details/138
+Architecture: all
+Depends: chipkit
+Description: PONTECH UAV100
+ PIC32 based Unmanned Aerial Vehicle
+
+Package: schmalzhaus-ubw32-460
+Section: boards
+XBSC-Group: Schmalzhaus
+Homepage: http://www.schmalzhaus.com/UBW32/
+Architecture: all
+Depends: chipkit
+Description: USB Bit Whacker MX460
+ The UBW32 is a small board that you can plug into your computer
+ (running Windows, MacOS or Linux) via USB. The USB connection can
+ power the board and allows you to send it commands from the computer.
+ These commands allow you to interface your computer to the real world
+ - like controlling things and getting input from things. The UBW32
+ can plug into a standard breadboard in several different ways, or
+ you can wire directly to it. You can power it through the USB
+ connection or from an external voltage source. It has 3 push buttons
+ (Reset, and 2 user-defined buttons) and 5 LEDs (Power, USB, and 3
+ user defined LEDs). It breaks out all of the PIC32's I/O pins to
+ pins around the outside of the board.
+
+Package: schmalzhaus-ubw32-795
+Section: boards
+XBSC-Group: Schmalzhaus
+Homepage: http://www.schmalzhaus.com/UBW32/
+Architecture: all
+Depends: chipkit
+Description: USB Bit Whacker MX795
+ The UBW32 is a small board that you can plug into your computer
+ (running Windows, MacOS or Linux) via USB. The USB connection can
+ power the board and allows you to send it commands from the computer.
+ These commands allow you to interface your computer to the real world
+ - like controlling things and getting input from things. The UBW32
+ can plug into a standard breadboard in several different ways, or
+ you can wire directly to it. You can power it through the USB
+ connection or from an external voltage source. It has 3 push buttons
+ (Reset, and 2 user-defined buttons) and 5 LEDs (Power, USB, and 3
+ user defined LEDs). It breaks out all of the PIC32's I/O pins to
+ pins around the outside of the board.
+

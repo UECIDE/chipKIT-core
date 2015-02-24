@@ -1,3 +1,9 @@
+chipkit (1.6.0-5) uecide; urgency=low
+
+  * Updated board configurations
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Tue, 24 Feb 2015 16:13:29 +0000
+
 chipkit (1.6.0-4) uecide; urgency=low
 
   * Merge branch 'master' of github.com:ricklon/chipKIT-core
