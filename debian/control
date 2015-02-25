@@ -23,7 +23,7 @@ Section: libraries
 XBSC-Group: Communications
 XBSC-Subgroup: SPI
 Depends: chipkit
-Description: DSPI Library
+Description: chipKIT DSPI Library
  The DSPI library is an alternative to the normal SPI library.  It provides
  advanced access to all the SPI ports available on a chipKIT board.
 
@@ -34,7 +34,7 @@ Section: libraries
 XBSC-Group: Communications
 XBSC-Subgroup: SPI
 Depends: chipkit
-Description: SPI Library
+Description: chipKIT SPI Library
  The SPI library is the traditional Arduino version.  It only allows
  the use of the primary SPI port on a chipKIT board.
 
@@ -45,7 +45,7 @@ XBSC-Group: Communications
 XBSC-Subgroup: SPI
 Depends: chipkit
 Section: libraries
-Description: SoftSPI Library
+Description: chipKIT SoftSPI Library
  The SoftSPI library emulates SPI over any pins you choose to use.
  It is, of course, slower than hardware SPI, but gives great flexibility
  for those times when you need an extra SPI channel for some low speed
@@ -57,7 +57,7 @@ Provides: ArduinoTestSuite.h
 Section: libraries
 XBSC-Group: Tests
 Depends: chipkit
-Description: Arduino Test Suite
+Description: chipKIT Test Suite
  A set of unit tests to validate a working system
 
 Package: libdeipck-chipkit
@@ -78,7 +78,7 @@ Section: libraries
 XBSC-Group: Communications
 XBSC-Subgroup: Networking
 Depends: chipkit, libdeipck-chipkit
-Description: WiFi networking layer
+Description: chipKIT WiFi networking layer
  This adds WiFi capability to the chipKIT networking stack.
 
 Package: libim8720phy-chipkit
@@ -88,7 +88,7 @@ XBSC-Group: Communications
 XBSC-Subgroup: Networking
 Section: libraries
 Depends: chipkit, libdeipck-chipkit
-Description: IM8720PHY Ethernet Adapter
+Description: chipKIT IM8720PHY Ethernet Adapter
  Allows use of the internal PIC32 Ethernet device with an IM8720PHY
  Ethernet interface.
 
@@ -99,7 +99,7 @@ XBSC-Group: Communications
 Section: libraries
 XBSC-Subgroup: Networking
 Depends: chipkit, libdeipck-chipkit, libdewfck-chipkit, libdspi-chipkit
-Description: MRF24G WiFi Adapter
+Description: chipKIT MRF24G WiFi Adapter
  Use the MRF24G WiFi adapter module with the chipKIT networking stack.
 
 Package: libhttpserver-chipkit
@@ -109,7 +109,7 @@ Section: libraries
 XBSC-Group: Communications
 XBSC-Subgroup: Networking
 Depends: chipkit, libdeipck-chipkit
-Description: HTTP Server Library
+Description: chipKIT HTTP Server Library
  Simple abstraction layer for implementing an HTTP server with the chipKIT
  networking stack.
 
@@ -120,7 +120,7 @@ XBSC-Group: Communications
 Section: libraries
 XBSC-Subgroup: Networking
 Depends: chipkit, libspi-chipkit
-Description: W5100 Ethernet Library
+Description: chipKIT W5100 Ethernet Library
  This is the traditional Arduino Ethernet interface library.
 
 Package: libfirmata-chipkit
@@ -139,8 +139,9 @@ Section: libraries
 Architecture: all
 Provides: Wire.h
 XBSC-Group: Communications
+XBSC-Subgroup: I2C
 Depends: chipkit
-Description: Wire I2C Library
+Description: chipKIT Wire I2C Library
  The traditional Arduino I2C library
 
 Package: libonewire-chipkit
@@ -149,7 +150,7 @@ Provides: OneWire.h
 Section: libraries
 XBSC-Group: Communications
 Depends: chipkit
-Description: Dallas OneWire Library
+Description: chipKIT Dallas OneWire Library 
  Communicate with Dallas OneWire sensors.
 
 Package: libsoftwareserial-chipkit
@@ -157,8 +158,9 @@ Architecture: all
 Provides: SoftwareSerial.h
 Section: libraries
 XBSC-Group: Communications
+XBSC-Subgroup: Serial
 Depends: chipkit
-Description: Software Serial
+Description: chipKIT Software Serial
  Primitive bit-banged serial emulation.
 
 Package: libeeprom-chipkit
@@ -166,6 +168,7 @@ Architecture: all
 Provides: EEPROM.h
 Section: libraries
 XBSC-Group: Storage
+XBSC-Subgroup: EEPROM
 Depends: chipkit
 Description: PIC32 EEPROM Emulation
  Use a block of reserved Flash as if it were EEPROM memory.
@@ -176,6 +179,7 @@ Architecture: all
 Section: libraries
 Provides: SD.h
 XBSC-Group: Storage
+XBSC-Subgroup: SD and MMC Cards
 Depends: chipkit
 Description: SD Card Library
  Access SD cards using the PIC32
@@ -185,6 +189,7 @@ Architecture: all
 Section: libraries
 Provides: LiquidCrystal.h
 XBSC-Group: Display
+XBSC-Subgroup: LCD
 Depends: chipkit
 Description: HD44780 LCD Display
  Control standard HD44780 text LCD displays
@@ -194,6 +199,7 @@ Architecture: all
 Section: libraries
 Provides: Servo.h
 XBSC-Group: Motor
+XBSC-Subgroup: Servo
 Depends: chipkit
 Description: Servo Library
  Drive servo motors with hardware PWM from the chipKIT boards.
@@ -203,6 +209,7 @@ Architecture: all
 Section: libraries
 Provides: SoftPWMServo.h
 XBSC-Group: Motor
+XBSC-Subgroup: Servo
 Depends: chipkit
 Description: Software PWM Servo Library
  Drive servo motors with software PWM from the chipKIT boards.
@@ -212,6 +219,7 @@ Architecture: all
 Section: libraries
 Provides: Stepper.h
 XBSC-Group: Motor
+XBSC-Subgroup: Stepper
 Depends: chipkit
 Description: Stepper Motors
  Control stepper motors.
