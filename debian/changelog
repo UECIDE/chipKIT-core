@@ -1,3 +1,9 @@
+chipkit (1.6.0-8) uecide; urgency=low
+
+  * Added correct mappings for UltraNano PWM pins
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Thu, 26 Feb 2015 00:58:37 +0000
+
 chipkit (1.6.0-7) uecide; urgency=low
 
   * Better library categorization
