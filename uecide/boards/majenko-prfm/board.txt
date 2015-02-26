@@ -15,13 +15,7 @@ upload.maximum_size=524288
 upload.maximum_ram=65536
 upload.speed=115200
 
-bootloader.low_fuses=0xff
-bootloader.high_fuses=0xdd
-bootloader.extended_fuses=0x00
-bootloader.path=not-supported
-bootloader.file=not-supported
-bootloader.unlock_bits=0x3F
-bootloader.lock_bits=0x0F
+bootloader.file=${board.root}/bootloader575ec
 
 build.mcu=32MX575F512H
 build.f_cpu=80000000L
