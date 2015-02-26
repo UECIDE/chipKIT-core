@@ -508,48 +508,6 @@ Description: Fubarino SD
  typical Arduino or clone. And it includes a microSD card slot for
  easy sketch access to huge file storage.
 
-Package: majenko-prfm
-Section: boards
-XBSC-Group: Majenko Technologies
-Homepage: http://majenko.co.uk
-Architecture: all
-Depends: chipkit, libpwmaudio-chipkit, libledmux-chipkit, libdebouncedinput
-Description: Pulse Rifle FX Module
- The Pulse Rifle FX Module is an embedded device for including in replica
- M41A Pulse Rifle props from the Aliens franchise of films.  With an
- ultra-bright red 7-segment display and onboard audio this makes the
- perfect addition to any fan's replica prop.
-
-Package: majenko-sdxl
-Section: boards
-XBSC-Group: Majenko Technologies
-Homepage: http://majenko.co.uk
-Architecture: all
-Depends: chipkit
-Description: Majenko Technologies SDXL
- With a similar pinout to the Fubarino SD, the Majenko Technologies
- SDXL is a drop-in replacememnt.  It does, however, have a number of
- important enhancements for advanced users.
-
-Package: majenko-sdzl
-Section: boards
-XBSC-Group: Majenko Technologies
-Homepage: http://majenko.co.uk
-Architecture: all
-Depends: chipkit
-Description: Majenko Technologies SDZL
- With the same footprint as the SDXL, the SDZL boasts a 200MHz
- PIC32MZ microcontroller.
-
-Package: majenko-ultranano
-Section: boards
-XBSC-Group: Majenko Technologies
-Architecture: all
-Depends: chipkit
-Description: UltraNano USB Interface
- The UltraNano USB Interface is a tiny PIC32 based board which is designed
- to plug directly into a USB port.
-
 Package: mchp-explorer16
 Section: boards
 XBSC-Group: Microchip

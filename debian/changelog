@@ -1,3 +1,21 @@
+chipkit (1.6.1-1) uecide; urgency=low
+
+  * Added bootloader to PRFM board
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Thu, 26 Feb 2015 17:13:09 +0000
+
+chipkit (1.6.1-0) uecide; urgency=low
+
+  * Fixed pickit2 upload type
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Thu, 26 Feb 2015 16:15:54 +0000
+
+chipkit (1.6.0-9) uecide; urgency=low
+
+  * Imported latest core files
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Thu, 26 Feb 2015 13:42:47 +0000
+
 chipkit (1.6.0-8) uecide; urgency=low
 
   * Added correct mappings for UltraNano PWM pins
