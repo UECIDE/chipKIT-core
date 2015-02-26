@@ -41,6 +41,7 @@ upload.pickit2.command.linux_i386=${core.root}/tools/linux32/pic32prog::-p::${fi
 upload.pickit2.command.linux_amd64=${core.root}/tools/linux64/pic32prog::-p::${filename}.hex
 upload.pickit2.command.windows=${core.root}/tools/windows/pic32prog::-p::${filename}.hex
 upload.pickit2.command.macosx=${core.root}/tools/macosx/pic32prog::-p::${filename}.hex
+upload.pickit2.using=hid
 
 upload.avrdude.verbose=-v
 upload.avrdude.quiet=-q::-q
