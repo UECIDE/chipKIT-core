@@ -120,11 +120,11 @@
 /*					Timer Pin Declarations						*/
 /* ------------------------------------------------------------ */
 
-#define PIN_OC1		 8      // B15   RPB15R  = 5  
-#define	PIN_OC2		 2      // B8    RPB8R   = 5
-#define	PIN_OC3		 3      // B9    RPB9R   = 5
-#define	PIN_OC4		13      // B2    RPB2R   = 5
-#define	PIN_OC5		 6      // B13   RPB13R  = 6
+#define PIN_OC1		15      // B15   RPB15R  = 5  
+#define	PIN_OC2		14      // B8    RPB8R   = 5
+#define	PIN_OC3		 2      // B9    RPB9R   = 5
+#define	PIN_OC4		11      // B2    RPB2R   = 5
+#define	PIN_OC5	    16      // B13   RPB13R  = 6
 
 #define PIN_IC1		 6      // RB13 IC1R = RPB13 = 3
 #define PIN_IC2		11      // B0   IC2R = RPB0  = 2

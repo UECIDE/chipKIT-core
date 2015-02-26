@@ -1,3 +1,15 @@
+chipkit (1.6.0-7) uecide; urgency=low
+
+  * Better library categorization
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Wed, 25 Feb 2015 13:42:45 +0000
+
+chipkit (1.6.0-6) uecide; urgency=low
+
+  * Moved boards into core package system
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Tue, 24 Feb 2015 19:15:49 +0000
+
 chipkit (1.6.0-5) uecide; urgency=low
 
   * Updated board configurations

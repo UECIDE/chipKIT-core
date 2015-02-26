@@ -113,7 +113,7 @@ const uint32_t	port_to_tris_PGM[] = {
 const uint8_t	digital_pin_to_port_PGM[] = {
     NOT_A_PORT, // 0 = GND
     NOT_A_PORT, // 1 = Vcc
-    _IOPORT_PB, // 2 = RB0 (CE)
+    _IOPORT_PB, // 2 = RB0 (CE ~)
     _IOPORT_PB, // 3 = RB3 (CSN)
     _IOPORT_PB, // 4 = RB14 (SCK)
     _IOPORT_PB, // 5 = RB2 (MOSI)
@@ -122,12 +122,12 @@ const uint8_t	digital_pin_to_port_PGM[] = {
     _IOPORT_PB, // 8 = RB15 (SCK2)
     _IOPORT_PB, // 9 = RB4
     NOT_A_PORT, // 10 = MCLR
-    _IOPORT_PA, // 11 = RA4
+    _IOPORT_PA, // 11 = RA4 (~)
     _IOPORT_PB, // 12 = RB8 (SCL)
     _IOPORT_PB, // 13 = RB9 (SDA)
-    _IOPORT_PA, // 14 = RA1
-    _IOPORT_PA, // 15 = RA0
-    _IOPORT_PB, // 16 = RB13 (LED)
+    _IOPORT_PA, // 14 = RA1 (~)
+    _IOPORT_PA, // 15 = RA0 (~)
+    _IOPORT_PB, // 16 = RB13 (LED ~)
     _IOPORT_PA, // 17 = RA3 (PROG)
 };
 
@@ -164,6 +164,7 @@ const uint16_t	digital_pin_to_bit_mask_PGM[] = {
 const uint16_t	digital_pin_to_timer_PGM[] = {
     NOT_ON_TIMER, 
     NOT_ON_TIMER, 
+    _TIMER_OC3,    
     NOT_ON_TIMER, 
     NOT_ON_TIMER, 
     NOT_ON_TIMER, 
@@ -172,13 +173,12 @@ const uint16_t	digital_pin_to_timer_PGM[] = {
     NOT_ON_TIMER, 
     NOT_ON_TIMER, 
     NOT_ON_TIMER, 
+    _TIMER_OC4,   
     NOT_ON_TIMER, 
     NOT_ON_TIMER, 
-    NOT_ON_TIMER, 
-    NOT_ON_TIMER, 
-    NOT_ON_TIMER, 
-    NOT_ON_TIMER, 
-    NOT_ON_TIMER, 
+    _TIMER_OC2,   
+    _TIMER_OC1,   
+    _TIMER_OC5,   
     NOT_ON_TIMER, 
 };
 
