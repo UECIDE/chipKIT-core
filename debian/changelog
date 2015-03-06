@@ -1,3 +1,9 @@
+chipkit (1.6.1-3) uecide; urgency=low
+
+  * Added Makefile template
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Fri, 6 Mar 2015 18:29:49 +0000
+
 chipkit (1.6.1-2) uecide; urgency=low
 
   * Removed Majenko boards to separate repos

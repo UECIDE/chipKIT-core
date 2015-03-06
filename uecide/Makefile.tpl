@@ -6,7 +6,7 @@ BOARD_NAME=${board:name}
 # The rest of the makefile does not need to change
 
 # Command to recreated both .hex and .elf
-COMMAND=java -jar $(UECIDE_INSTALLATION) --board=$(BOARD_NAME) --compile --headless --programmer=pickit2 .
+COMMAND=java -jar $(UECIDE_INSTALLATION) --force-save-hex --force-local-build --board=$(BOARD_NAME) --compile --headless --programmer=pickit2 .
 
 # target (make production)
 production: build/$(PROJ_NAME).hex
