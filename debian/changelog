@@ -1,3 +1,9 @@
+chipkit (1.6.1-2) uecide; urgency=low
+
+  * Removed Majenko boards to separate repos
+
+ -- Matt Jenkins <matt@majenko.co.uk>  Thu, 26 Feb 2015 20:54:44 +0000
+
 chipkit (1.6.1-1) uecide; urgency=low
 
   * Added bootloader to PRFM board

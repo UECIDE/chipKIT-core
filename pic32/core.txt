@@ -66,3 +66,4 @@ icon.32=icons/mpide32.png
 icon.22=icons/mpide22.png
 icon.16=icons/mpide16.png
 
+makefile.template=${core.root}/Makefile.tpl

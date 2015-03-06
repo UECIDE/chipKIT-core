@@ -2,3 +2,4 @@ pic32/cores/pic32 cores/chipkit/
 pic32/examples cores/chipkit/
 pic32/tools cores/chipkit/
 pic32/core.txt cores/chipkit/
+uecide/Makefile.tpl cores/chipkit/
