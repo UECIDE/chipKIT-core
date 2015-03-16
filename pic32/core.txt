@@ -29,7 +29,7 @@ upload.avrdude.command.linux_i386=${core.root}/tools/linux32/avrdude::-V::-p${bu
 upload.avrdude.command.linux_amd64=${core.root}/tools/linux64/avrdude::-V::-p${build.mcu}::-P${port}::-b${upload.speed}::-C${core.root}/tools/linux64/avrdude.conf::-cstk500v2::-Uflash:w:${filename}.hex:i::${verbose}
 upload.avrdude.command.windows=${core.root}/tools/windows/avrdude::-V::-p${build.mcu}::-P${port}::-b${upload.speed}::-C${core.root}/tools/windows/avrdude.conf::-cstk500v2::-Uflash:w:${filename}.hex:i::${verbose}
 upload.avrdude.command.macosx=${core.root}/tools/macosx/avrdude::-V::-p${build.mcu}::-P${port}::-b${upload.speed}::-C${core.root}/tools/macosx/avrdude.conf::-cstk500v2::-Uflash:w:${filename}.hex:i::${verbose}
-
+upload.avrdude.ldsuffix=
 upload.avrdude.verbose=-v
 upload.avrdude.quiet=-q::-q
 upload.avrdude.dtr=yes
@@ -41,6 +41,7 @@ upload.pickit2.command.linux_i386=${core.root}/tools/linux32/pic32prog::-p::${fi
 upload.pickit2.command.linux_amd64=${core.root}/tools/linux64/pic32prog::-p::${filename}.hex
 upload.pickit2.command.windows=${core.root}/tools/windows/pic32prog::-p::${filename}.hex
 upload.pickit2.command.macosx=${core.root}/tools/macosx/pic32prog::-p::${filename}.hex
+upload.pickit2.ldsuffix=-nobootloader
 upload.pickit2.using=hid
 
 upload.avrdude.verbose=-v
@@ -52,6 +53,7 @@ upload.pic32prog.command.linux_i386=${core.root}/tools/linux32/pic32prog::-S::-d
 upload.pic32prog.command.linux_amd64=${core.root}/tools/linux64/pic32prog::-S::-d::${port}::-p::${filename}.hex
 upload.pic32prog.command.windows=${core.root}/tools/windows/pic32prog::-S::-d::${port}::-p::${filename}.hex
 upload.pic32prog.command.macosx=${core.root}/tools/macosx/pic32prog::-S::-d::${port}::-p::${filename}.hex
+upload.pic32prog.ldsuffix=
 upload.pic32prog.dtr=yes
 upload.pic32prog.rts=yes
 
