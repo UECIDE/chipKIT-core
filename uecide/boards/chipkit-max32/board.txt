@@ -1,4 +1,4 @@
-variant=mega_pic32
+variant=chipkit-max32
 description=chipKIT MAX32
 group=chipKIT
 platform=pic32
@@ -18,7 +18,7 @@ version=0.6
 revision=5
 core=chipKIT
 manual=doc/chipKIT Max32_rm.pdf
-name=mega_pic32
+name=chipkit-max32
 
 options.usb.name=USB Settings
 options.usb.default=withoutSerial
