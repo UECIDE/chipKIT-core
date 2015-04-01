@@ -1,6 +1,6 @@
 # The parts of the makefile that change with sketch follow:
 PROJ_NAME=${sketch:name}
-UECIDE_INSTALLATION=${uecide:jar}
+UECIDE_INSTALLATION="${uecide:jar}"
 BOARD_NAME=${board:name}
 
 # The rest of the makefile does not need to change
