@@ -2,6 +2,7 @@
 PROJ_NAME=${sketch:name}
 UECIDE_INSTALLATION="${uecide:jar}"
 BOARD_NAME=${board:name}
+DEVICE=PIC${build.mcu}
 
 # The rest of the makefile does not need to change
 
