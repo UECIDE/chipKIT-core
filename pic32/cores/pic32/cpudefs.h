@@ -960,4 +960,3 @@
 #ifndef _CPU_NAME_
     #define _CPU_NAME_    "Unknown"
 #endif
-

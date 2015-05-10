@@ -51,7 +51,6 @@ size_t Print::println(const __FlashStringHelper *ifsh)
 }
 
 
-
 /* default implementation: may be overridden */
 size_t Print::write(const uint8_t *buffer, size_t size)
 {

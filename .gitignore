@@ -182,3 +182,15 @@ debian/schmalzhaus-ubw32-795.debhelper.log
 debian/schmalzhaus-ubw32-795.substvars
 debian/schmalzhaus-ubw32-795/
 
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.class
+*.svn
+
+#specifc files
+.DS_Store
+dist
+tmp
