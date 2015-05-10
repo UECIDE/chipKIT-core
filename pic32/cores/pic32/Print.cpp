@@ -19,6 +19,8 @@
  Modified 23 November 2006 by David A. Mellis
  */
 
+#define 	PGM_P   const char *
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -28,6 +30,27 @@
 #include "Print.h"
 
 // Public Methods //////////////////////////////////////////////////////////////
+
+size_t Print::print(const __FlashStringHelper *ifsh)
+{
+  PGM_P p = reinterpret_cast<PGM_P>(ifsh);
+  size_t n = 0;
+  while (1) {
+    unsigned char c = pgm_read_byte(p++);
+    if (c == 0) break;
+    n += write(c);
+  }
+  return n;
+}
+
+size_t Print::println(const __FlashStringHelper *ifsh)
+{
+  size_t n = print(ifsh);
+  n += println();
+  return n;
+}
+
+
 
 /* default implementation: may be overridden */
 size_t Print::write(const uint8_t *buffer, size_t size)

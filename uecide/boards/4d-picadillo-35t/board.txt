@@ -36,3 +36,5 @@ icon.32=icons/4d-32.png
 icon.22=icons/4d-22.png
 icon.16=icons/4d-16.png
 icon.8=icons/4d-8.png
+
+upload.maxbaud=1152000
