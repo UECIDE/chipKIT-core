@@ -36,7 +36,7 @@ upload.hid.ldsuffix=
 upload.hid.command.linux_arm=${core.root}/tools/linux_arm/pic32prog::-p::${filename}.hex
 upload.hid.command.linux_i386=${core.root}/tools/linux32/pic32prog::-p::${filename}.hex
 upload.hid.command.linux_amd64=${core.root}/tools/linux64/pic32prog::-p::${filename}.hex
-upload.hid.command.windows=${board.root}/tools/windows/mphidflash::-r::-w::${filename}.hex
+upload.hid.command.windows=${board.root}/tools/windows/mphidflash.exe::-r::-w::${filename}.hex
 upload.hid.command.macosx=${board.root}/tools/osx/mphidflash::-r::-w::${filename}.hex
 
 sketch.upload=mphid::avrdude
